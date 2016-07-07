@@ -4,6 +4,7 @@ This is a project I did for fun using Mike Bostock's D3 force layout.
 
 
 <!DOCTYPE html>
+<html>
 <meta charset="utf-8">
 <style>
 .node {
@@ -67,3 +68,4 @@ d3.json("links_reduced.json", function(error, graph) {
 	});
 });
 </script>
+</html>
