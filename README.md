@@ -22,7 +22,7 @@ var force = d3.layout.force()
 	.charge(-120)
 	.linkDistance(30)
 	.size([width, height]);
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#example").append("svg")
 	.attr("width", width)
 	.attr("height", height);
 d3.json("/links_reduced.json", function(error, graph) {
