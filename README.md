@@ -25,7 +25,7 @@ var force = d3.layout.force()
 var svg = d3.select("body").append("svg")
 	.attr("width", width)
 	.attr("height", height);
-d3.json("links_reduced.json", function(error, graph) {
+d3.json("/links_reduced.json", function(error, graph) {
     var edges = [];
     graph.links.forEach(function(e) { 
     var sourceNode = graph.nodes.filter(function(n) { return n.Name === e.source; })[0],
