@@ -2,10 +2,6 @@
 
 This is a project I did for fun using Mike Bostock's D3 force layout.
 
-
-<!DOCTYPE html>
-<html>
-<meta charset="utf-8">
 <style>
 .node {
   stroke: #fff;
@@ -16,8 +12,7 @@ This is a project I did for fun using Mike Bostock's D3 force layout.
   stroke-opacity: .6;
 }
 </style>
-<body>
-<h2>Bachelor Co-Occurrences</h2>
+
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 var width = 990,
@@ -68,4 +63,4 @@ d3.json("links_reduced.json", function(error, graph) {
 	});
 });
 </script>
-</html>
+<div id="example"></div>
